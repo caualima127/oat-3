@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Identificação do vendedor:");
+        int idVendedor = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Código da peça:");
+        int codigoPeca = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Preço unitário da peça:");
+        double precoUnitario = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Quantidade vendida:");
+        int quantidadeVendida = Convert.ToInt32(Console.ReadLine());
+
+        double totalVenda = precoUnitario * quantidadeVendida;
+        double comissao = 0.05 * totalVenda;
+
+        Console.WriteLine("Identificação do vendedor: {idVendedor}\nCodigo da peça: {codigoPeca}\nPreço unitário da peça: {precoUnitario:C}\nQuantidade vendida: {quantidadeVendida}\nTotal da venda: {totalVenda:C}\nComissão do vendedor: {comissao:C}");
+    }
+}

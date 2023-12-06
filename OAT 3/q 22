@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite um número:");
+        int numero = Convert.ToInt32(Console.ReadLine());
+
+        if (numero > 0)
+        {
+            Console.WriteLine($"O número {numero} é positivo e foi armazenado em A.");
+        }
+        else if (numero < 0)
+        {
+            Console.WriteLine($"O número {numero} é negativo e foi armazenado em B.");
+        }
+        else
+        {
+            Console.WriteLine("O número é zero, nenhum valor foi armazenado.");
+        }
+    }
+}

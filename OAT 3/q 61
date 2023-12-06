@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite o valor do salário:");
+        double salario = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite o índice de reajuste (em porcentagem):");
+        double indiceReajuste = Convert.ToDouble(Console.ReadLine());
+
+        double salarioAtualizado = Reajuste(salario, indiceReajuste);
+
+        Console.WriteLine($"Salário atualizado: {salarioAtualizado:C}");
+    }
+
+    static double Reajuste(double salario, double indiceReajuste)
+    {
+        double fatorReajuste = 1 + (indiceReajuste / 100);
+        return salario * fatorReajuste;
+    }
+}

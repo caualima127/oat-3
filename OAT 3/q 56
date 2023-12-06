@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int tamanho = 50;
+        int[] vetor = new int[tamanho];
+        int pares = 0, multiplosDe5 = 0;
+
+        Console.WriteLine("Digite os {tamanho} numeros inteiros positivos:");
+
+        for (int i = 0; i < tamanho; i++)
+        {
+            do Console.Write("Numero {i + 1}: ");
+            while (!int.TryParse(Console.ReadLine(), out vetor[i]) || vetor[i] <= 0);
+
+            if (vetor[i] % 2 == 0) pares++;
+            if (vetor[i] % 5 == 0) multiplosDe5++;
+        }
+
+        Console.WriteLine("Quantidade de numeros pares: {pares}");
+        Console.WriteLine("Quantidade de multiplos de 5: {multiplosDe5}");
+    }
+}

@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite o primeiro numero:");
+        double numero1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite o segundo numero:");
+        double numero2 = Convert.ToDouble(Console.ReadLine());
+
+        double diferenca = (numero1 > numero2) ? numero1 - numero2 : numero2 - numero1;
+        
+        Console.WriteLine("A diferença do maior para o menor e: {diferenca}");
+    }
+}

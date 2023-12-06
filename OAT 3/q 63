@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite um numero inteiro:");
+        int numero = Convert.ToInt32(Console.ReadLine());
+
+        string resultado = Verifica(numero);
+
+        Console.WriteLine("O numero e {resultado}");
+    }
+
+    static string Verifica(int n)
+    {
+        return n % 2 == 0 ? "PAR" : "IMPAR";
+    }
+}

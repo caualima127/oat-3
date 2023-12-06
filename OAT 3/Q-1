@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Informe a quantidade minima de peças
+        Console.Write("Digite a quantidade minima de peças:");
+        int quantidadeMinima = Convert.ToInt32(Console.ReadLine());
+
+        // Informe a quantidade msxima de peças
+        Console.Write("Digite a quantidade maxima de peças:");
+        int quantidadeMaxima = Convert.ToInt32(Console.ReadLine());
+
+        // Calcula o estoque medio
+        double estoqueMedio = (quantidadeMinima + quantidadeMaxima) / 2.0;
+
+        // Os resultados serão exibidos
+        Console.WriteLine("O estoque medio e: {estoqueMedio:F2}");
+    }
+}
